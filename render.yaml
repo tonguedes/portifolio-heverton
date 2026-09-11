@@ -1,0 +1,48 @@
+services:
+  - type: web
+    name: portifolio-heverton
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    envVars:
+      - key: APP_NAME
+        value: Portfolio
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: APP_KEY
+        sync: false
+      - key: APP_URL
+        value: https://portifolio-heverton.onrender.com
+      - key: APP_INDEXABLE
+        value: "false"
+      - key: APP_TIMEZONE
+        value: America/Sao_Paulo
+      - key: LOG_CHANNEL
+        value: stack
+      - key: LOG_LEVEL
+        value: error
+      - key: DB_CONNECTION
+        value: sqlite
+      - key: SESSION_DRIVER
+        value: cookie
+      - key: CACHE_STORE
+        value: file
+      - key: FILESYSTEM_DISK
+        value: local
+      - key: QUEUE_CONNECTION
+        value: sync
+      - key: INERTIA_SSR_ENABLED
+        value: "false"
+      - key: MAIL_MAILER
+        value: log
+      - key: DISCORD_ALERT_WEBHOOK
+        sync: false
+      - key: RECAPTCHA_SITE_KEY
+        sync: false
+      - key: RECAPTCHA_SECRET_KEY
+        sync: false
+      - key: VITE_RECAPTCHA_SITE_KEY
+        sync: false

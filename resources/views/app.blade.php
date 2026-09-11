@@ -9,6 +9,9 @@
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="msapplication-starturl" content="/">
+        @unless (config('app.indexable'))
+            <meta name="robots" content="noindex, nofollow">
+        @endunless
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
