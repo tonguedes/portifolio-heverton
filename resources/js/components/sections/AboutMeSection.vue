@@ -3,7 +3,7 @@ import SectionHeader from '@/components/base/SectionHeader.vue';
 import PortfolioTag from '@/components/generic/PortfolioTag.vue';
 import ProfilePhoto from '@/components/generic/ProfilePhoto.vue';
 
-const skills = ['Laravel', 'Vue.js', 'TypeScript', 'PHP', 'Inertia.js', 'Tailwind CSS', 'Statamic', 'Relational Databases'];
+const skills = ['Laravel', 'Vue.js', 'TypeScript', 'PHP', 'Inertia.js', 'Tailwind CSS', 'JavaScript', 'Relational Databases'];
 </script>
 
 <template>

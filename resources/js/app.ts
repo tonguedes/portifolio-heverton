@@ -31,12 +31,3 @@ createInertiaApp({
             .mount(el);
     },
 });
-
-window.addEventListener('DOMContentLoaded', () => {
-    window.dataLayer = window.dataLayer || [];
-    function gtag(...args: unknown[]): void {
-        window.dataLayer.push(args);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-154219567-1');
-});

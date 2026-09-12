@@ -38,6 +38,8 @@ services:
         value: "false"
       - key: MAIL_MAILER
         value: log
+      - key: MAIL_FROM_ADDRESS
+        value: hguedes_prado@hotmail.com
       - key: DISCORD_ALERT_WEBHOOK
         sync: false
       - key: RECAPTCHA_SITE_KEY

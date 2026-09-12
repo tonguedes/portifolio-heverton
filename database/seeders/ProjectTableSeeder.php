@@ -10,128 +10,61 @@ class ProjectTableSeeder extends Seeder
 {
     public function run(): void
     {
-        Project::factory()->create(
+        $portfolio = Project::factory()->create(
             [
                 'name' => 'Portfolio',
-                'description' => 'My Website Portfolio',
+                'description' => 'My personal portfolio, built with Laravel, Vue.js, Inertia.js and Tailwind CSS.',
                 'owner' => 'Me',
-                'link' => 'https://www.jamesdordoy.co.uk',
-            ]
-        );
-
-        Project::factory()->create(
-            [
-                'name' => 'Shopping Application',
-                'description' => 'VueFire SPA, Vue Cli 3, Tailwind.css.',
-                'owner' => 'Me',
-                'icon' => '/storage/images/projects/simple-shopping.png',
-                'link' => 'https://shopping.jamesdordoy.co.uk',
-            ]
-        );
-
-        $project = Project::factory()->create(
-            [
-                'name' => 'Laravel Vue Datatables',
-                'description' => 'A Vue.js datatable component for Laravel that works with Bootstrap.',
-                'owner' => 'Me',
-                'icon' => '/storage/images/projects/bootstrap-datatable.png',
-                'link' => 'https://github.com/jamesdordoy/laravel-vue-datatable',
+                'icon' => '/images/projects/portfolio.png',
+                'link' => 'https://portifolio-heverton.onrender.com',
+                'complete' => 1,
                 'private' => 0,
             ]
         );
 
         DB::table('taggables')->insert([
-            'tag_id' => 1,
-            'taggable_id' => $project->id,
-            'taggable_type' => 'App\Models\Project',
+            ['tag_id' => 1, 'taggable_id' => $portfolio->id, 'taggable_type' => 'App\Models\Project'],
+            ['tag_id' => 2, 'taggable_id' => $portfolio->id, 'taggable_type' => 'App\Models\Project'],
+            ['tag_id' => 3, 'taggable_id' => $portfolio->id, 'taggable_type' => 'App\Models\Project'],
+            ['tag_id' => 4, 'taggable_id' => $portfolio->id, 'taggable_type' => 'App\Models\Project'],
+            ['tag_id' => 5, 'taggable_id' => $portfolio->id, 'taggable_type' => 'App\Models\Project'],
+            ['tag_id' => 6, 'taggable_id' => $portfolio->id, 'taggable_type' => 'App\Models\Project'],
         ]);
 
-        DB::table('taggables')->insert([
-            'tag_id' => 2,
-            'taggable_id' => $project->id,
-            'taggable_type' => 'App\Models\Project',
-        ]);
-
-        DB::table('taggables')->insert([
-            'tag_id' => 4,
-            'taggable_id' => $project->id,
-            'taggable_type' => 'App\Models\Project',
-        ]);
-
-        DB::table('taggables')->insert([
-            'tag_id' => 5,
-            'taggable_id' => $project->id,
-            'taggable_type' => 'App\Models\Project',
-        ]);
-
-        DB::table('taggables')->insert([
-            'tag_id' => 10,
-            'taggable_id' => $project->id,
-            'taggable_type' => 'App\Models\Project',
-        ]);
-
-        $phpForwardChaining = Project::factory()->create(
+        $noCoffee = Project::factory()->create(
             [
-                'name' => 'PHP Forward Chaining Engine',
-                'description' => 'A simple Forward Chaining Engine written in PHP and makes use of the Symfony expressions language',
+                'name' => 'No.Coffee',
+                'description' => 'Landing page for a healthy food & drinks franchise brand — lead capture forms, business model breakdown and store formats.',
                 'owner' => 'Me',
-                'icon' => '/storage/images/projects/PHPBinaryTree.png',
-                'link' => 'https://github.com/jamesdordoy/PHP-Forward-Chaining',
+                'icon' => '/images/projects/no-coffee.png',
+                'link' => 'https://tonguedes.github.io/No-Coffee/',
+                'complete' => 1,
                 'private' => 0,
             ]
         );
 
         DB::table('taggables')->insert([
-            'tag_id' => 1,
-            'taggable_id' => $phpForwardChaining->id,
-            'taggable_type' => 'App\Models\Project',
+            ['tag_id' => 7, 'taggable_id' => $noCoffee->id, 'taggable_type' => 'App\Models\Project'],
+            ['tag_id' => 8, 'taggable_id' => $noCoffee->id, 'taggable_type' => 'App\Models\Project'],
+            ['tag_id' => 9, 'taggable_id' => $noCoffee->id, 'taggable_type' => 'App\Models\Project'],
+            ['tag_id' => 10, 'taggable_id' => $noCoffee->id, 'taggable_type' => 'App\Models\Project'],
         ]);
 
-        DB::table('taggables')->insert([
-            'tag_id' => 10,
-            'taggable_id' => $phpForwardChaining->id,
-            'taggable_type' => 'App\Models\Project',
-        ]);
-
-        $pointsOfInterestMappingApp = Project::factory()->create(
+        $receitasInLove = Project::factory()->create(
             [
-                'name' => 'Points of Interest',
-                'description' => 'A JavaScript frontend mapping app with a PHP and Node.JS backend made while attending University.',
+                'name' => 'Receitas inLove',
+                'description' => 'A personal recipe-sharing website built with Laravel, featuring Breeze authentication and social login.',
                 'owner' => 'Me',
-                'icon' => '/storage/images/projects/PointsofInterest.png',
-                'link' => '',
+                'icon' => '/images/projects/receitas-inlove.png',
+                'link' => 'https://github.com/tonguedes/Receitas_inLove',
+                'complete' => 0,
                 'private' => 0,
             ]
         );
 
         DB::table('taggables')->insert([
-            'tag_id' => 1,
-            'taggable_id' => $pointsOfInterestMappingApp->id,
-            'taggable_type' => 'App\Models\Project',
-        ]);
-
-        DB::table('taggables')->insert([
-            'tag_id' => 3,
-            'taggable_id' => $pointsOfInterestMappingApp->id,
-            'taggable_type' => 'App\Models\Project',
-        ]);
-
-        DB::table('taggables')->insert([
-            'tag_id' => 5,
-            'taggable_id' => $pointsOfInterestMappingApp->id,
-            'taggable_type' => 'App\Models\Project',
-        ]);
-
-        DB::table('taggables')->insert([
-            'tag_id' => 8,
-            'taggable_id' => $pointsOfInterestMappingApp->id,
-            'taggable_type' => 'App\Models\Project',
-        ]);
-
-        DB::table('taggables')->insert([
-            'tag_id' => 9,
-            'taggable_id' => $pointsOfInterestMappingApp->id,
-            'taggable_type' => 'App\Models\Project',
+            ['tag_id' => 1, 'taggable_id' => $receitasInLove->id, 'taggable_type' => 'App\Models\Project'],
+            ['tag_id' => 2, 'taggable_id' => $receitasInLove->id, 'taggable_type' => 'App\Models\Project'],
         ]);
     }
 }

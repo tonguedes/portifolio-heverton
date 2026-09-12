@@ -10,7 +10,7 @@ withDefaults(
 <template>
     <div class="flex items-center gap-2">
         <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-cyan-600 dark:bg-cyan-500">
-            <span class="text-xs font-bold text-white">JD</span>
+            <span class="text-xs font-bold text-white">HG</span>
         </div>
         <span
             v-if="showName"

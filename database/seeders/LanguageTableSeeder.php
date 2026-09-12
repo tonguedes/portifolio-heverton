@@ -20,42 +20,42 @@ class LanguageTableSeeder extends Seeder
         ]);
 
         Language::factory()->create([
-            'name' => 'Web App',
-            'description' => 'PHP',
-        ]);
-
-        Language::factory()->create([
             'name' => 'Vue.js',
             'description' => 'PHP',
         ]);
 
         Language::factory()->create([
+            'name' => 'TypeScript',
+            'description' => 'PHP',
+        ]);
+
+        Language::factory()->create([
+            'name' => 'Inertia.js',
+            'description' => 'PHP',
+        ]);
+
+        Language::factory()->create([
+            'name' => 'Tailwind CSS',
+            'description' => 'PHP',
+        ]);
+
+        Language::factory()->create([
+            'name' => 'HTML',
+            'description' => 'PHP',
+        ]);
+
+        Language::factory()->create([
+            'name' => 'CSS',
+            'description' => 'PHP',
+        ]);
+
+        Language::factory()->create([
+            'name' => 'JavaScript',
+            'description' => 'PHP',
+        ]);
+
+        Language::factory()->create([
             'name' => 'Bootstrap',
-            'description' => 'PHP',
-        ]);
-
-        Language::factory()->create([
-            'name' => 'Firebase',
-            'description' => 'PHP',
-        ]);
-
-        Language::factory()->create([
-            'name' => 'VueFire',
-            'description' => 'PHP',
-        ]);
-
-        Language::factory()->create([
-            'name' => 'Node.js',
-            'description' => 'PHP',
-        ]);
-
-        Language::factory()->create([
-            'name' => 'Angularjs',
-            'description' => 'PHP',
-        ]);
-
-        Language::factory()->create([
-            'name' => 'Package',
             'description' => 'PHP',
         ]);
     }

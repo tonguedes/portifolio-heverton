@@ -6,8 +6,8 @@ import { faArrowDown, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const socials = [
-    { icon: faGithub, href: 'https://github.com/jamesdordoy', label: 'GitHub' },
-    { icon: faLinkedin, href: 'https://www.linkedin.com/in/james-dordoy-a80686110/', label: 'LinkedIn' },
+    { icon: faGithub, href: 'https://github.com/tonguedes', label: 'GitHub' },
+    { icon: faLinkedin, href: 'https://www.linkedin.com/in/hevertonguedes/', label: 'LinkedIn' },
 ];
 </script>
 
